@@ -37,7 +37,7 @@
 					<h2>Save The Koala</h2>
 					<p>Koalas are declining in rapid numbers because the trees where they spend a majority of their time are being quickly chopped down. Activists need to take action to try and protect these animals’ habitats so they do not become a thing of the past.</p>
 				</div>
-				<button type="button" class="btn btn-default greenbtn"><b>See More</b></button>
+				<button type="button" class="btn btn-default greenbtn" data-toggle="tooltip" data-placement="bottom" title="Hola soy un boton"><b>See More</b></button>
 				</div>
 			</div>
 		</div>
@@ -74,14 +74,30 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-6">
-					<h4><b>EASY HELP</b></h4>
+					<h4 class="el-h4"><b>EASY HELP</b></h4>
 					<h2><b>Save Koalas From Possible Extinction!</b></h2>
 					<p>Loss of koala habitat is the major threat facing koalas today. Since white settlement of Australia, roughly 80% of the koala’s habitat has been destroyed and of what remains, most occurs on privately owned land and almost none is protected.</p>
-					<button type="button" class="btn btn-default greenbtn"><b>Read more</b></button>
+					<button type="button" class="btn btn-default greenbtn btn-info" data-toggle="modal" data-target="#myModal"><b>Read more</b></button>	
 				</div>
+				<!-- Modal -->
+					<div id="myModal" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+					    <!-- Modal content-->
+					    <div class="modal-content">
+					      <div class="modal-header">
+					    
+					        <h4 class="modal-title h4error">ERROR 400</h4>
+					      </div>
+
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-default greenbtn" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				<!--fin modal-->	
 				<div class="col-md-6">
 					<img src="img/cosita.jpg" class="img-responsive cosita">
-
 				</div>
 			</div>
 		</div>
@@ -118,6 +134,56 @@
 			</div>
 		</div>		
 	</section>
+		<section class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<!--indicators-->
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					</ol>
+					<!-- wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img class="portada" src="img/all.jpg" alt="...">
+							<div class="carousel-caption">
+								<h1>Koalas</h1>
+							</div>
+						</div>
+						<div class="item">
+							<img class="portada" src="img/all.jpg" alt="...">
+							<div class="carousel-caption">
+								<h1>Más Koalas</h1>
+							</div>
+						</div>
+						<div class="item">
+							<img class="portada" src="img/all.jpg">
+							<div class="carousel-caption">
+								<h1>Wow ..</h1>
+							</div>
+						</div>
+						<div class="item">
+							<img class="portada" src="img/all.jpg">
+							<div class="carousel-caption">
+								<h1>Lindos Koalas</h1>
+							</div>
+						</div>
+					</div>
+					<!--controls-->
+					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
 	<section class="money text-center">
 		<div class="container-fluid">
 			<div class="row">
@@ -132,7 +198,22 @@
 					<p><b>1</b> visits per month</p>
 					<hr>
 					<p><b>Public</b>API access</p>
-					<button type="button" class="btn btn-default greenbtn"><b>DONATE</b></button>
+					<button type="button" class="btn btn-default greenbtn btn-info" data-toggle="modal" data-target="#myModal1"><b>DONATE</b></button>
+					<!-- Modal -->
+					<div id="myModal1" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+					    <!-- Modal content-->
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h4 class="modal-title">Tu donación se realizó con exito!</h4>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-default greenbtn" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				<!--fin modal-->	
 				</div>
 				<div class="col-xs-12 col-md-4">
 					<h6><b>GROUPS</b></h6>
@@ -144,7 +225,22 @@
 					<p><b>2</b> visits per month</p>
 					<hr>
 					<p><b>Public</b>API access</p>
-					<button type="button" class="btn btn-default greenbtn"><b>DONATE</b></button>
+					<button type="button" class="btn btn-default greenbtn btn-info" data-toggle="modal" data-target="#myModal1""><b>DONATE</b></button>
+					<!-- Modal -->
+					<div id="myModal1" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+					    <!-- Modal content-->
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h4 class="modal-title">Tu donación se realizó con exito!</h4>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-default greenbtn" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				<!--fin modal-->	
 				</div>
 				<div class="col-xs-12 col-md-4">
 					<h6><b>COMPANIES</b></h6>
@@ -156,7 +252,8 @@
 					<p><b>3</b> visits per month</p>
 					<hr>
 					<p><b>Public</b>API access</p>
-					<button type="button" class="btn btn-default greenbtn"><b>DONATE</b></button>
+					<button type="button" class="btn btn-default greenbtn btn-info" data-toggle="collapse" data-target="#demo"><b>DONATE</b></button>
+					<div id="demo" class="collapse greendiv">Por el momento no podemos realizar tu solicitud.</div>
 				</div>
 			</div>
 		</div>

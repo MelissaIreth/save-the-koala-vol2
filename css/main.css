@@ -99,7 +99,7 @@ i:hover{
 	background-color: #A89F68;
 	padding: 80px;
 }
-.helpkoala h4,p{
+.helpkoala .el-h4,p{
 	color: whitesmoke;
 }
 .cosita{
@@ -186,4 +186,11 @@ footer ul {
 
 footer ul li{
 	color: #A89F68;
+}
+
+.greendiv{
+	background-color: #41521F;
+	color: whitesmoke;
+	margin-top: 5px;
+	padding: 10px;
 }
